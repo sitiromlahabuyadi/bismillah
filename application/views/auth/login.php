@@ -39,7 +39,7 @@
                     <div class="panel periodic-login">
                         <span class="atomic-number">28</span>
                         <div class="panel-body text-center">
-                            <h1 class="atomic-symbol">RS</h1>
+                            <h1 class="atomic-symbol">POSKESTREN</h1>
                             <p class="atomic-mass"></p>
                             <p class="element-name">Silahkan Login</p>
 
