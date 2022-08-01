@@ -39,7 +39,7 @@
                     <div class="panel periodic-login">
                         <span class="atomic-number">02</span>
                         <div class="panel-body text-center">
-                            <h1 class="atomic-symbol">RS_P</h1>
+                            <h1 class="atomic-symbol">RSP</h1>
                             <p class="atomic-mass"></p>
                             <p class="element-name">Silahkan Login</p>
 
