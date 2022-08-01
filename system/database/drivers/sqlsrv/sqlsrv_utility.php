@@ -32,48 +32,46 @@
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
- * @since	Version 2.1.0
+ * @since	Version 2.0.3
  * @filesource
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * CUBRID Utility Class
+ * SQLSRV Utility Class
  *
  * @category	Database
- * @author		Esen Sagynov
+ * @author		EllisLab Dev Team
  * @link		https://codeigniter.com/user_guide/database/
  */
-class CI_DB_cubrid_utility extends CI_DB_utility {
+class CI_DB_sqlsrv_utility extends CI_DB_utility {
 
 	/**
-	 * List databases
+	 * List databases statement
 	 *
-	 * @return	array
+	 * @var	string
 	 */
-	public function list_databases()
-	{
-		if (isset($this->db->data_cache['db_names']))
-		{
-			return $this->db->data_cache['db_names'];
-		}
+	protected $_list_databases	= 'EXEC sp_helpdb'; // Can also be: EXEC sp_databases
 
-		return $this->db->data_cache['db_names'] = cubrid_list_dbs($this->db->conn_id);
-	}
+	/**
+	 * OPTIMIZE TABLE statement
+	 *
+	 * @var	string
+	 */
+	protected $_optimize_table	= 'ALTER INDEX all ON %s REORGANIZE';
 
 	// --------------------------------------------------------------------
 
 	/**
-	 * CUBRID Export
+	 * Export
 	 *
-	 * @param	array	Preferences
-	 * @return	mixed
+	 * @param	array	$params	Preferences
+	 * @return	bool
 	 */
 	protected function _backup($params = array())
 	{
-		// No SQL based support in CUBRID as of version 8.4.0. Database or
-		// table backup can be performed using CUBRID Manager
-		// database administration tool.
+		// Currently unsupported
 		return $this->db->display_error('db_unsupported_feature');
 	}
+
 }
