@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
             <div class="col-md-6 col-sm-6 text-right" style="padding-left:10px;">
-                <h3 style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span>CIRIUNG</h3>
+                <h3 style="color:#DDDDDE;"><span class="fa  fa-map-marker"></span>Sukorejo</h3>
                 <h1 style="margin-top: -10px;color: #ddd;">30<sup>o</sup></h1>
             </div>
             <div class="col-md-6 col-sm-6">
