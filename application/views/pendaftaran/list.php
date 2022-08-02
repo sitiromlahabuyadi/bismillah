@@ -149,7 +149,7 @@
                     </div>
                     
                     <div class="col-md-6">
-                        <span class="fa-star-half">NO ktp</span>
+                        <span class="fa-star-half">NIS</span>
                         <input required="" type="text" name="no_ktp" id="no_ktp" class="form-control"> 
                     </div>
                 </div>
