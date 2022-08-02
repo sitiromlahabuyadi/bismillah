@@ -8,7 +8,7 @@
         <meta name="author" content="Isna Nur Azis">
         <meta name="keyword" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Miminium</title>
+        <title>POSKESTREN</title>
 
         <!-- start: Css -->
         <link rel="stylesheet" type="text/css" href="<?php  echo base_url() ?>assets/css/bootstrap.min.css">
@@ -39,7 +39,7 @@
                         <span class="bottom"></span>
                     </div>
                     <a href="index.html" class="navbar-brand"> 
-                        <b>MIMIN</b>
+                        <b>poskestren</b>
                     </a>
 
                     <ul class="nav navbar-nav search-nav">
@@ -91,7 +91,7 @@
                         <li><div class="left-bg"></div></li>
                         <li class="time">
                             <h1 class="animated fadeInLeft">21:00</h1>
-                            <p class="animated fadeInRight">Sat,October 1st 2029</p>
+                            <p class="animated fadeInRight">Senin, 01 Agustus 2022</p>
                         </li>
                         <li class="ripple"><a href="<?php echo site_url('Dashboard') ?>"><span class="fa fa-home"></span>Dashborad</a></li>
                         <li class="ripple"><a href="<?php echo site_url('Jadwal') ?>"><span class="fa fa-calendar-o"></span>Jadwal Dokter</a></li>
