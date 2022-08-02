@@ -30,7 +30,7 @@ class Pendaftaran extends CI_Controller {
             'nama_pasien' => $dokter['nama_pasien'],
             'alamat' => $dokter['alamat'],
             'jenis_pasien' => $dokter['jenis_pasien'],
-            'no_ktp' => $dokter['no_ktp'],
+            'nis' => $dokter['nis'],
             'keterangan' => $dokter['keterangan'],
         );
         echo json_encode($data);
