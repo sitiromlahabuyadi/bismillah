@@ -10,7 +10,7 @@
         </div>
 
         <div class="col-md-4">
-            <h3 class="animated fadeInLeft">Jenis paisien</h3>
+            <h3 class="animated fadeInLeft">Jenis pasien</h3>
             <p class="animated fadeInDown">
                 <?php echo cmb_dinamis('jenis_pasien', 'jenis_berobat', 'jenis_pasien', 'id') ?>
             </p>
@@ -26,7 +26,7 @@
 
 
         <div class="col-md-6">
-            <h3 class="animated fadeInLeft">NO KTP ATAU KPJ</h3>
+            <h3 class="animated fadeInLeft">NIS</h3>
             <p class="animated fadeInDown">
                 <input type="number" required="" name="no_ktp" class="form-control">
             </p>
