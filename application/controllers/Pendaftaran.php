@@ -8,7 +8,7 @@ class Pendaftaran extends CI_Controller {
     }
 
     function index() {
-        $data['daftar'] = $this->db->query("SELECT ts.no_ktp,ts.id_pasien,ts.no_pasien,ts.nama_pasien,ts.alamat,ts.keterangan,ts.tanggal,js.jenis_pasien FROM tbl_pasien as ts, jenis_berobat as js WHERE ts.id_jenis_pasien=js.id")->result();
+        $data['daftar'] = $this->db->query("SELECT ts.nis,ts.id_pasien,ts.nama_pasien,ts.alamat,ts.keterangan,ts.tanggal,js.jenis_pasien FROM tbl_pasien as ts, jenis_berobat as js WHERE ts.id_jenis_pasien=js.id")->result();
         $this->template->load('template', 'pendaftaran/list', $data);
     }
 
