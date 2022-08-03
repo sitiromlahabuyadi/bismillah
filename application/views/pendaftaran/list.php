@@ -28,7 +28,7 @@
         <div class="col-md-6">
             <h3 class="animated fadeInLeft">NIS</h3>
             <p class="animated fadeInDown">
-                <input type="number" required="" name="no_ktp" class="form-control">
+                <input type="number" required="" name="nis" class="form-control">
             </p>
         </div>
 
@@ -65,7 +65,6 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>No Pasien</th>
                                 <th>Nama</th>
                                 <th>Jenis_pasien</th>
                                 <th>Tanggal</th>
@@ -83,13 +82,12 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $no; ?></td>
-                                    <td><?php echo $row->no_pasien; ?></td>
                                     <td><?php echo $row->nama_pasien; ?></td>
                                     <td><?php echo $row->jenis_pasien; ?></td>
                                     <td><?php echo $row->tanggal; ?></td>
                                     <td><?php echo $row->keterangan; ?></td>
                                     <td><?php echo $row->alamat; ?></td>
-                                    <td><?php echo $row->no_ktp; ?></td>
+                                    <td><?php echo $row->nis; ?></td>
                                     <td>
                                         <button class="btn btn-3d ripple-infinite btn-raised btn-success btn-sm" onclick="show_by_id(<?php echo $row->id_pasien ?>)" data-toggle="modal" data-target="#exampleModal">
                                             <div>
@@ -150,7 +148,7 @@
                     
                     <div class="col-md-6">
                         <span class="fa-star-half">NIS</span>
-                        <input required="" type="text" name="no_ktp" id="no_ktp" class="form-control"> 
+                        <input required="" type="text" name="nis" id="nis" class="form-control"> 
                     </div>
                 </div>
 
@@ -175,7 +173,7 @@
                 $("#id_pasien").val(obj.id_pasien);
                 $("#nama_pasien").val(obj.nama_pasien);
                 $("#alamat").val(obj.alamat);
-                $("#no_ktp").val(obj.no_ktp);
+                $("#nis").val(obj.nis);
                 $("#keterangan").val(obj.keterangan);
                 $("#jenis_pasien").val(obj.jenis_pasien);
             }
