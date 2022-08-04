@@ -97,6 +97,7 @@
                         <li class="ripple"><a href="<?php echo site_url('Jadwal') ?>"><span class="fa fa-calendar-o"></span>Jadwal Dokter</a></li>
                         <li class="ripple"><a href="<?php echo site_url('Dokter') ?>"><span class="fa fa-hospital-o"></span>Dokter</a></li>
                         <li class="ripple"><a href="<?php echo site_url('Jenis_berobat') ?>"><span class="fa fa-pencil-square-o"></span>Jenis Berobat</a></li>
+                        <li class="ripple"><a href="<?php echo site_url('User') ?>"><span class="fa fa-pencil-square-o"></span>User</a></li>
                        </ul>
                 </div>
             </div>
