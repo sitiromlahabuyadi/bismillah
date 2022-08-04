@@ -11,6 +11,13 @@ Class Auth extends CI_Controller {
         $this->load->view('auth/login');
     }
 
+    public function valdasi()
+    {
+        $this->form_validation->set_rules('username', 'Username','required');
+        $this->form_validation->set_rules('password', 'Password','required');
+        $this->form_validation->set_rules('level', 'Level','required');
+    }
+
     function chek_login() {
         if (isset($_POST['submit'])) {
             $username = $this->input->post('username');
