@@ -18,66 +18,6 @@ Class Jadwal extends CI_Controller {
         $dokter = $this->db->query($sql_dokter)->row_Array();
         $data = array(
             'id_transaksi_jadwal' => $dokter['id_transaksi_jadwal'],
-            'Holifatus_sakinah' => $dokter['holifatus_sakinah'],
-            'Senin' => $dokter['senin'],
-            'Dokter_kandungan' => $dokter['dokter_kandungan'],
-            'buka_jam_16.00-21.00' => $dokter['buka_jam_16.00-21.00'],
-            'foto' => $dokter['foto'],
-        );
-        echo json_encode($data);
-    }
-
-    function show_by_id() {
-        $id_transaksi_jadwal = $_GET['id_transaksi_jadwal'];
-        $sql_dokter = "select * from v_jadwal where id_transaksi_jadwal='$id_transaksi_jadwal'";
-        $dokter = $this->db->query($sql_dokter)->row_Array();
-        $data = array(
-            'id_transaksi_jadwal' => $dokter['id_transaksi_jadwal'],
-            'nama_dokter' => $dokter['nama_dokter'],
-            'hari' => $dokter['hari'],
-            'jenis_dokter' => $dokter['jenis_dokter'],
-            'keterangan' => $dokter['keterangan'],
-            'foto' => $dokter['foto'],
-        );
-        echo json_encode($data);
-    }
-
-    function show_by_id() {
-        $id_transaksi_jadwal = $_GET['id_transaksi_jadwal'];
-        $sql_dokter = "select * from v_jadwal where id_transaksi_jadwal='$id_transaksi_jadwal'";
-        $dokter = $this->db->query($sql_dokter)->row_Array();
-        $data = array(
-            'id_transaksi_jadwal' => $dokter['id_transaksi_jadwal'],
-            'nama_dokter' => $dokter['nama_dokter'],
-            'hari' => $dokter['hari'],
-            'jenis_dokter' => $dokter['jenis_dokter'],
-            'keterangan' => $dokter['keterangan'],
-            'foto' => $dokter['foto'],
-        );
-        echo json_encode($data);
-    }
-
-    function show_by_id() {
-        $id_transaksi_jadwal = $_GET['id_transaksi_jadwal'];
-        $sql_dokter = "select * from v_jadwal where id_transaksi_jadwal='$id_transaksi_jadwal'";
-        $dokter = $this->db->query($sql_dokter)->row_Array();
-        $data = array(
-            'id_transaksi_jadwal' => $dokter['id_transaksi_jadwal'],
-            'nama_dokter' => $dokter['nama_dokter'],
-            'hari' => $dokter['hari'],
-            'jenis_dokter' => $dokter['jenis_dokter'],
-            'keterangan' => $dokter['keterangan'],
-            'foto' => $dokter['foto'],
-        );
-        echo json_encode($data);
-    }
-
-    function show_by_id() {
-        $id_transaksi_jadwal = $_GET['id_transaksi_jadwal'];
-        $sql_dokter = "select * from v_jadwal where id_transaksi_jadwal='$id_transaksi_jadwal'";
-        $dokter = $this->db->query($sql_dokter)->row_Array();
-        $data = array(
-            'id_transaksi_jadwal' => $dokter['id_transaksi_jadwal'],
             'nama_dokter' => $dokter['nama_dokter'],
             'hari' => $dokter['hari'],
             'jenis_dokter' => $dokter['jenis_dokter'],
