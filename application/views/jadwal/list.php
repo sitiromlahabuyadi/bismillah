@@ -38,11 +38,11 @@
                     <div class="caption">
                         <small class="pull-right">
 						<br>
-                            <span class="rate fa-star fa"></span>
-                            <span class="rate fa-star fa"></span>
-                            <span class="rate fa-star fa"></span>
-                            <span class="rate fa-star fa"></span>
-                            <span class="rate fa-star fa"></span>
+                            <span class="fas fa-heart"></span>
+                            <span class="fas fa-heart"></span>
+                            <span class="fas fa-heart"></span>
+                            <span class="fas fa-heart"></span>
+                            <span class="fas fa-heart"></span>
                         </small>
                         <h5><?php echo $row->nama_dokter ?></h5>
                         <h6><?php echo $row->keterangan ?></h6>
